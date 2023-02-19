@@ -22,6 +22,19 @@ body * {
 padding: 10px;
 }
 
+/*Intento de ajustar la imagen que no acacba de funcionar*/
+@media (max-width: 20px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sections"
+      "index"
+      "main"
+      "footer";
+  }
+}
+
 .cabecera {
 height: 20%;
 background:blanchedalmond;
@@ -51,10 +64,6 @@ text-align: center;
     background-color: rgb(251, 196, 145);
   }
 
-  .contenedor a{
-    transition:all .5s ease-in-out;
-  }
-
   .contenedor a:hover{
     background-color: blanchedalmond;;
   }
@@ -73,6 +82,7 @@ text-align: center;
     color: black;
     background-color: rgb(251, 196, 145);
     user-select: none;
+    transition:all .5s ease-in-out;
   }
   .contenedor li a:hover {
     background: blanchedalmond;
@@ -109,12 +119,6 @@ grid-area: main;
 }
 
 
-.indice {
-background: hotpink;
-grid-area: index;
-display: none;
-}
-
 
 footer {
     position: absolute;
@@ -128,7 +132,7 @@ footer {
     left: 0;
     }
 
-button
+button 
 {
   background-color: rgb(251, 196, 145);
   position: relative;
@@ -143,3 +147,13 @@ button
 button :hover{
   background-color: blanchedalmond;;
 }
+
+button a{
+  transition:all .5s ease-in-out;
+
+}
+
+button a :hover{
+  background-color: blanchedalmond;;
+}
+

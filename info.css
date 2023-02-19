@@ -104,7 +104,13 @@ footer {
 
 fieldset
 {
-    height: 25em;
+    height: 28em;
+}
+
+
+#parrafoImp
+{
+  height: 6em;
 }
 
 p{
